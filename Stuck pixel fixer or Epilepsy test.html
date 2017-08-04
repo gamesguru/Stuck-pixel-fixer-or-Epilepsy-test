@@ -1,0 +1,38 @@
+<html>
+       
+    <script>
+        setInterval(bgChange, 20);
+
+        function bgRed() {
+ 
+            document.getElementById("wrapper").style.backgroundColor = "red";
+
+        }
+        
+    function bgGreen() {
+        
+             document.getElementById("wrapper").style.backgroundColor = "green";
+
+        }
+        
+    function bgBlue() {
+ 
+            document.getElementById("wrapper").style.backgroundColor = "blue";
+
+        }
+        
+
+    function bgChange() {
+            setTimeout(function(){bgRed()}, 20);
+            setTimeout(function(){bgGreen()}, 60);
+            setTimeout(function(){bgBlue()}, 80);
+        }
+        
+    </script>
+    
+    <body>
+        <div id="wrapper"
+        onfocus="bgChange();" style="height:1500;width:1500"></div>
+    </body>
+    
+</html>
